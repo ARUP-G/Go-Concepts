@@ -6,6 +6,7 @@ import "fmt"
 func main() {
 	fmt.Println("Maps")
 	//map[key]value
+	// make -> built-in function allocates and initializes an object of type slice, map, or chan (only)
 	languages := make(map[string]string)
 
 	//adding
