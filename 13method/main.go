@@ -28,7 +28,7 @@ type User struct {
 }
 
 // method
-func (u User) getStatus() {
+func (u User) getStatus () {
 	fmt.Println("Online:", u.Status)
 }
 func (u User) newMail() {
