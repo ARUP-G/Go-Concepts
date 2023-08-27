@@ -31,5 +31,33 @@ func Encodeing() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("%s \n", finalJson) // output as string
+	// output as string
+	fmt.Printf("%s \n", finalJson)
+}
+
+func Decoading() {
+
+	jsonData := []byte(`
+	{
+		"holdername": "Ron",
+		"accountNum": 848826,
+		"branch": "Kol",
+		"_": "dfe816",
+		"acctype": ["Saving","Current","Treadnig"]
+	}
+	`)
+
+	// create a var of type struct to store the json data
+	var accDetails account
+
+	checkValid := json.Valid(jsonData)
+
+	if checkValid {
+		fmt.Println("Json Data is Valid")
+		// unmarshaling the jsonData and saving to accDetails
+		json.Unmarshal(jsonData, &accDetails)
+		fmt.Printf("%#v\n", accDetails)
+	} else {
+		fmt.Println("Json Not Valid !!")
+	}
 }
