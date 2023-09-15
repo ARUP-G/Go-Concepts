@@ -50,7 +50,7 @@ func massAdder(values ...int) int {
 
 // func with 2 signetures
 // syntax
-// func name_of_functon (name type-of_parameter) type_of_function
+// func name_of_functon (name type-of_parameter) type_of_function/defination
 func massAdder2(values ...int) (int, string) {
 	total := 0
 	for _, val := range values {
