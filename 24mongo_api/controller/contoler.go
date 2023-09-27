@@ -12,7 +12,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-const connectionString = "mongodb+srv://ard:ard_mongo_#@cluster0.tjp4cmg.mongodb.net/?retryWrites=true&w=majority"
+const connectionString = "link"
 const dbName = "netflix"
 const colName = "status"
 
