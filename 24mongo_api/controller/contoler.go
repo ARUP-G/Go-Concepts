@@ -12,6 +12,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+// Change 'link' -> actual connection  
 const connectionString = "link"
 const dbName = "netflix"
 const colName = "status"
